@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('fonts/Montserrat-Bold.ttf');
+}
+
+@font-face{
+    font-family:'Roboto-Regular';
+    src: url('fonts/Roboto-Regular.ttf');
+}
+
+@font-face{
+    font-family:'JetBrainsMono';
+    src: url('fonts/JetBrainsMono-Regular.ttf');
+}

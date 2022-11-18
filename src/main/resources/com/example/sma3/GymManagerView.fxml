@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="1080.0" maxWidth="1920.0" minHeight="600.0" minWidth="1280.0" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #32353a;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sma3.GymManagerController">
+         <children>
+      <GridPane minHeight="513.0" minWidth="1280.0" prefWidth="1280.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="720.0" minHeight="10.0" prefHeight="454.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="720.0" minHeight="10.0" prefHeight="266.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+                  <BorderPane prefHeight="200.0" prefWidth="1280.0" style="-fx-background-color: #32353a;">
+                     <center>
+                  
+                                <TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="453.0" prefWidth="1280.0" stylesheets="@../../../tab-pane.css" tabClosingPolicy="UNAVAILABLE" tabMinHeight="50.0" tabMinWidth="150.0" BorderPane.alignment="CENTER">
+                              <tabs>
+                                  <Tab text="HOME">
+                                      <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #1e1e1e;">
+                                              <children>
+                                                        <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="483.0" layoutY="72.0" opacity="0.11" pickOnBounds="true" preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../../../images/Scarlet-Knight.png" />
+                                                            </image>
+                                                        </ImageView>
+                                    <Text fill="#de3845" layoutX="72.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GYM MANAGER" wrappingWidth="410.0">
+                                       <font>
+                                          <Font name="Montserrat Bold" size="46.0" />
+                                       </font>
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="72.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME!">
+                                       <font>
+                                          <Font name="Montserrat Bold" size="18.0" />
+                                       </font>
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="72.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TO ADD/REMOVE MEMBERS, NAVIGATE TO THE                            TAB">
+                                       <font>
+                                          <Font name="Montserrat Bold" size="18.0" />
+                                       </font>
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="72.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TO MANAGE FITNESS CLASSES, NAVIGATE TO THE                  TAB">
+                                       <font>
+                                          <Font name="Montserrat Bold" size="18.0" />
+                                       </font>
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="72.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLICK ON THE APPROPIRATE BUTTONS UNDER &quot;           &quot; TO LOAD DATA.">
+                                       <font>
+                                          <Font name="Montserrat Bold" size="18.0" />
+                                       </font>
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="72.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLICK THE BUTTONS ON THE LEFT UNDER &quot;            &quot; TO PRINT AND SORT DATABASES.">
+                                       <font>
+                                          <Font name="Montserrat Bold" size="18.0" />
+                                       </font>
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                    </Text>
+                                    <Text fill="#de3845" layoutX="484.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRINT">
+                                       <font>
+                                          <Font name="Montserrat Bold" size="18.0" />
+                                       </font>
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                    </Text>
+                                    <Text fill="#de3845" layoutX="533.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOAD">
+                                       <font>
+                                          <Font name="Montserrat Bold" size="18.0" />
+                                       </font>
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                    </Text>
+                                    <Text fill="#de3845" layoutX="528.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MEMBERSHIP">
+                                       <font>
+                                          <Font name="Montserrat Bold" size="18.0" />
+                                       </font>
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                    </Text>
+                                    <Text fill="#de3845" layoutX="550.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FITNESS">
+                                       <font>
+                                          <Font name="Montserrat Bold" size="18.0" />
+                                       </font>
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                    </Text>
+                                    <VBox layoutX="1082.0" layoutY="51.0" prefHeight="343.0" prefWidth="166.0" spacing="8.0">
+                                       <children>
+                                          <Text fill="#de3845" strokeType="OUTSIDE" strokeWidth="0.0" text="LOAD" textAlignment="CENTER" wrappingWidth="165.13671875">
+                                             <font>
+                                                <Font name="Montserrat Bold" size="20.0" />
+                                             </font>
+                                          </Text>
+                                          <Button fx:id="loadMemberB" mnemonicParsing="false" onAction="#loadMemberList" prefHeight="32.0" prefWidth="165.0" style="-fx-background-radius: 4; -fx-background-color: #de3845;" text="MEMBER LIST" textAlignment="CENTER" textFill="WHITE">
+                                             <font>
+                                                <Font name="Montserrat Bold" size="13.0" />
+                                             </font>
+                                             <effect>
+                                                <DropShadow />
+                                             </effect>
+                                          </Button>
+                                          <Button fx:id="loadClassB" mnemonicParsing="false" onAction="#loadSchedule" prefHeight="32.0" prefWidth="165.0" style="-fx-background-radius: 4; -fx-background-color: #de3845;" text=" CLASS SCHEDULE" textAlignment="CENTER" textFill="WHITE">
+                                             <font>
+                                                <Font name="Montserrat Bold" size="13.0" />
+                                             </font>
+                                             <effect>
+                                                <DropShadow />
+                                             </effect>
+                                          </Button>
+                                          <Text fill="#de3845" strokeType="OUTSIDE" strokeWidth="0.0" text="PRINT" textAlignment="CENTER" wrappingWidth="165.13671875">
+                                             <font>
+                                                <Font name="Montserrat Bold" size="20.0" />
+                                             </font>
+                                          </Text>
+                                          <Button fx:id="printB" mnemonicParsing="false" onAction="#print" prefHeight="23.0" prefWidth="180.0" style="-fx-background-radius: 4; -fx-background-color: #de3845;" text="PRINT MEMBER LIST" textAlignment="CENTER" textFill="WHITE">
+                                             <font>
+                                                <Font name="Montserrat Bold" size="13.0" />
+                                             </font>
+                                             <effect>
+                                                <DropShadow />
+                                             </effect>
+                                          </Button>
+                                          <Button fx:id="sortLocB" mnemonicParsing="false" onAction="#sortByCounty" prefHeight="23.0" prefWidth="180.0" style="-fx-background-radius: 4; -fx-background-color: #de3845;" text="SORT BY COUNTY" textAlignment="CENTER" textFill="WHITE">
+                                             <font>
+                                                <Font name="Montserrat Bold" size="13.0" />
+                                             </font>
+                                             <effect>
+                                                <DropShadow />
+                                             </effect>
+                                          </Button>
+                                          <Button fx:id="sortNameB" mnemonicParsing="false" onAction="#sortByName" prefHeight="23.0" prefWidth="180.0" style="-fx-background-radius: 4; -fx-background-color: #de3845;" text="SORT BY LAST NAME" textAlignment="CENTER" textFill="WHITE">
+                                             <font>
+                                                <Font name="Montserrat Bold" size="13.0" />
+                                             </font>
+                                             <effect>
+                                                <DropShadow />
+                                             </effect>
+                                          </Button>
+                                          <Button fx:id="sortExpB" mnemonicParsing="false" onAction="#sortByExpirationDate" prefHeight="23.0" prefWidth="180.0" style="-fx-background-radius: 4; -fx-background-color: #de3845;" text="SORT BY EXP DATE" textAlignment="CENTER" textFill="WHITE">
+                                             <font>
+                                                <Font name="Montserrat Bold" size="13.0" />
+                                             </font>
+                                             <effect>
+                                                <DropShadow />
+                                             </effect>
+                                          </Button>
+                                          <Button fx:id="sortPriceB" mnemonicParsing="false" onAction="#printFee" prefHeight="23.0" prefWidth="180.0" style="-fx-background-radius: 4; -fx-background-color: #de3845;" text="SORT BY FEE" textAlignment="CENTER" textFill="WHITE">
+                                             <font>
+                                                <Font name="Montserrat Bold" size="13.0" />
+                                             </font>
+                                             <effect>
+                                                <DropShadow />
+                                             </effect>
+                                          </Button>
+                                          <Button fx:id="printSchedB" mnemonicParsing="false" onAction="#displaySchedule" prefHeight="23.0" prefWidth="180.0" style="-fx-background-radius: 4; -fx-background-color: #de3845;" text="PRINT SCHEDULE" textAlignment="CENTER" textFill="WHITE">
+                                             <font>
+                                                <Font name="Montserrat Bold" size="13.0" />
+                                             </font>
+                                             <effect>
+                                                <DropShadow />
+                                             </effect>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                              </children>
+                                          </AnchorPane>
+                                      </content>
+                                  </Tab>
+                                  <Tab text="MEMBERSHIP">
+                                      <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                              <children>
+                                                  <TabPane prefHeight="670.0" prefWidth="1280.0" stylesheets="@../../../tab-pane.css" tabClosingPolicy="UNAVAILABLE">
+                                                      <tabs>
+                                                          <Tab text="ADD">
+                                                              <content>
+                                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #1e1e1e;">
+                                                                      <children>
+                                                                          <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="490.0" layoutY="43.0" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+                                                                              <image>
+                                                                                  <Image url="@../../../images/Scarlet-Knight.png" />
+                                                                              </image>
+                                                                          </ImageView>
+                                                                          <Text fill="#de3845" layoutX="455.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MEMBER INFORMATION:" textAlignment="CENTER" wrappingWidth="370.0">
+                                                                              <font>
+                                                                                  <Font name="Montserrat Bold" size="46.0" />
+                                                                              </font>
+                                                                              <effect>
+                                                                                  <DropShadow />
+                                                                              </effect>
+                                                                          </Text>
+                                                                          <Text fill="WHITE" layoutX="290.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FIRST NAME:" textAlignment="RIGHT">
+                                                                              <font>
+                                                                                  <Font name="Montserrat Bold" size="20.0" />
+                                                                              </font>
+                                                                              <effect>
+                                                                                  <DropShadow />
+                                                                              </effect>
+                                                                          </Text>
+                                                                          <TextField fx:id="fnameAdd" layoutX="440.0" layoutY="150.0" onMouseClicked="#firstcleartextField" prefHeight="25.0" prefWidth="400.0" />
+                                                                          <Text fill="WHITE" layoutX="296.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LAST NAME:" textAlignment="RIGHT">
+                                                                              <font>
+                                                                                  <Font name="Montserrat Bold" size="20.0" />
+                                                                              </font>
+                                                                              <effect>
+                                                                                  <DropShadow />
+                                                                              </effect>
+                                                                          </Text>
+                                                                          <TextField fx:id="lnameAdd" layoutX="440.0" layoutY="180.0" onMouseClicked="#lastcleartextField" prefHeight="25.0" prefWidth="400.0" />
+                                                                          <Text fill="WHITE" layoutX="255.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATE OF BIRTH:" textAlignment="RIGHT">
+                                                                              <font>
+                                                                                  <Font name="Montserrat Bold" size="20.0" />
+                                                                              </font>
+                                                                              <effect>
+                                                                                  <DropShadow />
+                                                                              </effect>
+                                                                          </Text>
+                                                      <DatePicker fx:id="dobFieldA" layoutX="440.0" layoutY="210.0" prefHeight="25.0" prefWidth="400.0" />
+                                                                          <Text fill="WHITE" layoutX="307.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOCATION:" textAlignment="RIGHT">
+                                                                              <font>
+                                                                                  <Font name="Montserrat Bold" size="20.0" />
+                                                                              </font>
+                                                                              <effect>
+                                                                                  <DropShadow />
+                                                                              </effect>
+                                                                          </Text>
+                                                                          <TextField fx:id="locationFieldAdd" layoutX="440.0" layoutY="240.0" prefHeight="25.0" prefWidth="400.0" />
+                                                      <Text fill="WHITE" layoutX="273.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MEMBERSHIP:" textAlignment="RIGHT">
+                                                         <font>
+                                                            <Font name="Montserrat Bold" size="20.0" />
+                                                         </font>
+                                                         <effect>
+                                                            <DropShadow />
+                                                         </effect>
+                                                      </Text>
+                                                      <RadioButton fx:id="standard" layoutX="440.0" layoutY="279.0" mnemonicParsing="false" style="-fx-font-family: Montserrat;" stylesheets="@../../../radio.css" text="STANDARD" textFill="WHITE">
+                                                         <toggleGroup>
+                                                            <ToggleGroup fx:id="membership" />
+                                                         </toggleGroup>
+                                                         <font>
+                                                            <Font name="Montserrat Bold" size="12.0" />
+                                                         </font>
+                                                      </RadioButton>
+                                                      <RadioButton fx:id="family" layoutX="606.0" layoutY="279.0" mnemonicParsing="false" style="-fx-font-family: Montserrat;" stylesheets="@../../../radio.css" text="FAMILY" textFill="WHITE" toggleGroup="$membership">
+                                                         <font>
+                                                            <Font name="Montserrat Bold" size="12.0" />
+                                                         </font>
+                                                      </RadioButton>
+                                                      <RadioButton fx:id="premium" layoutX="757.0" layoutY="279.0" mnemonicParsing="false" style="-fx-font-family: Montserrat;" stylesheets="@../../../radio.css" text="PREMIUM" textFill="WHITE" toggleGroup="$membership">
+                                                         <font>
+                                                            <Font name="Montserrat Bold" size="12.0" />
+                                                         </font>
+                                                      </RadioButton>
+                                                      <Button fx:id="addMemberB" layoutX="576.0" layoutY="311.0" mnemonicParsing="false" onAction="#addMemberButton" prefWidth="130.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: #ffffff;" text="ADD MEMBER" textAlignment="CENTER">
+                                                         <font>
+                                                            <Font size="17.0" />
+                                                         </font>
+                                                      </Button>
+                                                                      </children>
+                                                                  </AnchorPane>
+                                                              </content>
+                                                          </Tab>
+                                                          <Tab text="REMOVE">
+                                                              <content>
+                                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #1e1e1e;">
+                                                                      <children>
+                                                                          <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="490.0" layoutY="43.0" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+                                                                              <image>
+                                                                                  <Image url="@../../../images/Scarlet-Knight.png" />
+                                                                              </image>
+                                                                          </ImageView>
+                                                      <Text fill="#de3845" layoutX="455.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MEMBER INFORMATION:" textAlignment="CENTER" wrappingWidth="370.0">
+                                                         <font>
+                                                            <Font name="Montserrat Bold" size="46.0" />
+                                                         </font>
+                                                         <effect>
+                                                            <DropShadow />
+                                                         </effect>
+                                                      </Text>
+                                                      <Text fill="WHITE" layoutX="290.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FIRST NAME:" textAlignment="RIGHT">
+                                                         <font>
+                                                            <Font name="Montserrat Bold" size="20.0" />
+                                                         </font>
+                                                         <effect>
+                                                            <DropShadow />
+                                                         </effect>
+                                                      </Text>
+                                                      <Text fill="WHITE" layoutX="296.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LAST NAME:" textAlignment="RIGHT">
+                                                         <font>
+                                                            <Font name="Montserrat Bold" size="20.0" />
+                                                         </font>
+                                                         <effect>
+                                                            <DropShadow />
+                                                         </effect>
+                                                      </Text>
+                                                      <Text fill="WHITE" layoutX="255.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATE OF BIRTH:" textAlignment="RIGHT">
+                                                         <font>
+                                                            <Font name="Montserrat Bold" size="20.0" />
+                                                         </font>
+                                                         <effect>
+                                                            <DropShadow />
+                                                         </effect>
+                                                      </Text>
+                                                      <TextField fx:id="lastNameRemove" layoutX="440.0" layoutY="180.0" onMouseClicked="#removeLastcleartextField" prefHeight="25.0" prefWidth="400.0" />
+                                                      <TextField fx:id="firstNameRemove" layoutX="440.0" layoutY="150.0" onMouseClicked="#removeFirstcleartextField" prefHeight="25.0" prefWidth="400.0" />
+                                                      <DatePicker fx:id="dobFieldR" layoutX="440.0" layoutY="210.0" prefHeight="25.0" prefWidth="400.0" />
+                                                      <Button fx:id="removeMemberB" layoutX="560.0" layoutY="288.0" mnemonicParsing="false" onAction="#removeMemberButton" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: #ffffff;" text="REMOVE MEMBER" textAlignment="CENTER">
+                                                         <font>
+                                                            <Font size="17.0" />
+                                                         </font>
+                                                      </Button>
+                                                                      </children>
+                                                                  </AnchorPane>
+                                                              </content>
+                                                          </Tab>
+                                                      </tabs>
+                                                  </TabPane>
+                                              </children>
+                                          </AnchorPane>
+                                      </content>
+                                  </Tab>
+                                  <Tab text="FITNESS CLASS">
+                                      <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #1e1e1e;">
+                                              <children>
+                                                  <TabPane prefHeight="670.0" prefWidth="1280.0" stylesheets="@../../../tab-pane.css" tabClosingPolicy="UNAVAILABLE">
+                                                      <tabs>
+                                                          <Tab text="FOR MEMBERS">
+                                                              <content>
+                                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1280.0" style="-fx-background-color: #1e1e1e;">
+                                                                      <children>
+                                                                          <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="490.0" layoutY="43.0" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+                                                                              <image>
+                                                                                  <Image url="@../../../images/Scarlet-Knight.png" />
+                                                                              </image>
+                                                                          </ImageView>
+                                                      <Text fill="#de3845" layoutX="441.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MEMBER CHECK IN" textAlignment="CENTER" wrappingWidth="370.0">
+                                                         <font>
+                                                            <Font name="Montserrat Bold" size="46.0" />
+                                                         </font>
+                                                         <effect>
+                                                            <DropShadow />
+                                                         </effect>
+                                                      </Text>
+                                                      <Text fill="WHITE" layoutX="276.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FIRST NAME:" textAlignment="RIGHT">
+                                                         <font>
+                                                            <Font name="Montserrat Bold" size="20.0" />
+                                                         </font>
+                                                         <effect>
+                                                            <DropShadow />
+                                                         </effect>
+                                                      </Text>
+                                                      <TextField fx:id="fnameM" layoutX="440.0" layoutY="139.0" onMouseClicked="#checkInFirstcleartextField" prefHeight="25.0" prefWidth="400.0" />
+                                                      <Text fill="WHITE" layoutX="281.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LAST NAME:" textAlignment="RIGHT">
+                                                         <font>
+                                                            <Font name="Montserrat Bold" size="20.0" />
+                                                         </font>
+                                                         <effect>
+                                                            <DropShadow />
+                                                         </effect>
+                                                      </Text>
+                                                      <TextField fx:id="lnameM" layoutX="440.0" layoutY="169.0" onMouseClicked="#checkInLastcleartextField" prefHeight="25.0" prefWidth="400.0" />
+                                                      <Text fill="WHITE" layoutX="239.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATE OF BIRTH:" textAlignment="RIGHT">
+                                                         <font>
+                                                            <Font name="Montserrat Bold" size="20.0" />
+                                                         </font>
+                                                         <effect>
+                                                            <DropShadow />
+                                                         </effect>
+                                                      </Text>
+                                                      <DatePicker fx:id="dobFieldM" layoutX="440.0" layoutY="199.0" prefHeight="25.0" prefWidth="400.0" />
+                                                      <Text fill="WHITE" layoutX="196.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INSTRUCTOR NAME:" textAlignment="RIGHT">
+                                                         <font>
+                                                            <Font name="Montserrat Bold" size="20.0" />
+                                                         </font>
+                                                         <effect>
+                                                            <DropShadow />
+                                                         </effect>
+                                                      </Text>
+                                                      <TextField fx:id="classNameM" layoutX="440.0" layoutY="229.0" prefHeight="25.0" prefWidth="400.0" />
+                                                      <Button fx:id="checkInB" layoutX="530.0" layoutY="323.0" mnemonicParsing="false" onAction="#checkIn" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: #ffffff;" text="CHECK IN" textAlignment="CENTER">
+                                                         <font>
+                                                            <Font size="17.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Text fill="WHITE" layoutX="265.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLASS NAME:" textAlignment="RIGHT">
+                                                         <font>
+                                                            <Font name="Montserrat Bold" size="20.0" />
+                                                         </font>
+                                                         <effect>
+                                                            <DropShadow />
+                                                         </effect>
+                                                      </Text>
+                                                      <Text fill="WHITE" layoutX="238.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GYM LOCATION:" textAlignment="RIGHT">
+                                                         <font>
+                                                            <Font name="Montserrat Bold" size="20.0" />
+                                                         </font>
+                                                         <effect>
+                                                            <DropShadow />
+                                                         </effect>
+                                                      </Text>
+                                                      <TextField fx:id="instNameM" layoutX="440.0" layoutY="259.0" prefHeight="25.0" prefWidth="400.0" />
+                                                      <TextField fx:id="locationFieldM" layoutX="440.0" layoutY="289.0" prefHeight="25.0" prefWidth="400.0" />
+                                                      <Button fx:id="checkOutB" layoutX="654.0" layoutY="323.0" mnemonicParsing="false" onAction="#checkOut" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: #ffffff;" text="CHECK OUT" textAlignment="CENTER">
+                                                         <font>
+                                                            <Font size="17.0" />
+                                                         </font>
+                                                      </Button>
+                                                                      </children>
+                                                                  </AnchorPane>
+                                                              </content>
+                                                          </Tab>
+                                                          <Tab text="FOR GUESTS">
+                                                              <content>
+                                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #1e1e1e;">
+                                                                      <children>
+                                                                          <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="490.0" layoutY="43.0" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+                                                                              <image>
+                                                                                  <Image url="@../../../images/Scarlet-Knight.png" />
+                                                                              </image>
+                                                                          </ImageView>
+                                                      <Text fill="#de3845" layoutX="482.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GUEST CHECK IN" textAlignment="CENTER" wrappingWidth="288.0">
+                                                         <font>
+                                                            <Font name="Montserrat Bold" size="46.0" />
+                                                         </font>
+                                                         <effect>
+                                                            <DropShadow />
+                                                         </effect>
+                                                      </Text>
+                                                      <Button fx:id="checkGuestB" layoutX="475.0" layoutY="323.0" mnemonicParsing="false" onAction="#guestCheckIn" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: #ffffff;" text="CHECK IN GUEST" textAlignment="CENTER">
+                                                         <font>
+                                                            <Font size="17.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Text fill="WHITE" layoutX="276.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FIRST NAME:" textAlignment="RIGHT">
+                                                         <font>
+                                                            <Font name="Montserrat Bold" size="20.0" />
+                                                         </font>
+                                                         <effect>
+                                                            <DropShadow />
+                                                         </effect>
+                                                      </Text>
+                                                      <TextField fx:id="fnameG" layoutX="440.0" layoutY="139.0" onMouseClicked="#guestCheckFirstcleartextField" prefHeight="25.0" prefWidth="400.0" />
+                                                      <Text fill="WHITE" layoutX="281.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LAST NAME:" textAlignment="RIGHT">
+                                                         <font>
+                                                            <Font name="Montserrat Bold" size="20.0" />
+                                                         </font>
+                                                         <effect>
+                                                            <DropShadow />
+                                                         </effect>
+                                                      </Text>
+                                                      <TextField fx:id="lnameG" layoutX="440.0" layoutY="169.0" onMouseClicked="#guestCheckLastcleartextField" prefHeight="25.0" prefWidth="400.0" />
+                                                      <Text fill="WHITE" layoutX="239.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATE OF BIRTH:" textAlignment="RIGHT">
+                                                         <font>
+                                                            <Font name="Montserrat Bold" size="20.0" />
+                                                         </font>
+                                                         <effect>
+                                                            <DropShadow />
+                                                         </effect>
+                                                      </Text>
+                                                      <DatePicker fx:id="dobFieldG" layoutX="440.0" layoutY="199.0" prefHeight="25.0" prefWidth="400.0" />
+                                                      <Text fill="WHITE" layoutX="196.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INSTRUCTOR NAME:" textAlignment="RIGHT">
+                                                         <font>
+                                                            <Font name="Montserrat Bold" size="20.0" />
+                                                         </font>
+                                                         <effect>
+                                                            <DropShadow />
+                                                         </effect>
+                                                      </Text>
+                                                      <TextField fx:id="classNameG" layoutX="440.0" layoutY="229.0" prefHeight="25.0" prefWidth="400.0" />
+                                                      <Text fill="WHITE" layoutX="265.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLASS NAME:" textAlignment="RIGHT">
+                                                         <font>
+                                                            <Font name="Montserrat Bold" size="20.0" />
+                                                         </font>
+                                                         <effect>
+                                                            <DropShadow />
+                                                         </effect>
+                                                      </Text>
+                                                      <Text fill="WHITE" layoutX="238.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GYM LOCATION:" textAlignment="RIGHT">
+                                                         <font>
+                                                            <Font name="Montserrat Bold" size="20.0" />
+                                                         </font>
+                                                         <effect>
+                                                            <DropShadow />
+                                                         </effect>
+                                                      </Text>
+                                                      <TextField fx:id="instNameG" layoutX="440.0" layoutY="259.0" prefHeight="25.0" prefWidth="400.0" />
+                                                      <TextField fx:id="locationFieldG" layoutX="440.0" layoutY="289.0" prefHeight="25.0" prefWidth="400.0" />
+                                                      <Button fx:id="checkOutGuestB" layoutX="662.0" layoutY="323.0" mnemonicParsing="false" onAction="#guestCheckOut" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: #ffffff;" text="CHECK OUT GUEST" textAlignment="CENTER">
+                                                         <font>
+                                                            <Font size="17.0" />
+                                                         </font>
+                                                      </Button>
+                                                                      </children>
+                                                                  </AnchorPane>
+                                                              </content>
+                                                          </Tab>
+                                                      </tabs>
+                                                  </TabPane>
+                                              </children>
+                                          </AnchorPane>
+                                      </content>
+                                  </Tab>
+                              </tabs>
+                          </TabPane>
+                     </center>
+                  </BorderPane>
+            <TextArea fx:id="displayOut" editable="false" prefHeight="249.0" prefWidth="1280.0" style="-fx-background-color: #1e1e1e;" stylesheets="@../../../text-area.css" text="Gym Manager running..." GridPane.rowIndex="1">
+               <font>
+                  <Font name="JetBrains Mono Regular" size="14.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="content" />
+                  <String fx:value="text-area" />
+               </styleClass>
+            </TextArea>
+         </children>
+      </GridPane>
+         </children>
+      </StackPane>
